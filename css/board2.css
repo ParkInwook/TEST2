@@ -1,0 +1,43 @@
+	    /*==== 메인 상품 ======*/
+	    .list-inner img{
+            width:100%; 
+        }
+        /*부모요소에 overflow hidden을 적용한다*/
+        .prod-content {
+            overflow: hidden;
+            padding: 15px 0px 15px 0px;
+        }
+        /*자식 요소를 block요소로 변경한다*/
+        .prod-content > .info > span {
+            display: block;
+        }
+        /*float으로 좌우 탑을 쌓는다*/                
+        .prod-content > .info {
+            float: left;
+        }
+        
+        .prod-content > .price {
+            float: right;
+        }
+        .prod-list-inner .prod-color {
+            opacity: 0; /*투명도 0*/
+            margin-top: -34px; /*마진을 반대로 끌어올린다*/
+            transition:all 0.2s ease-in-out;
+            -webkit-transition:all 0.2s ease-in-out
+        }
+        .prod-list-inner .prod-color ul {
+            overflow: hidden;
+        }
+        
+        .prod-list-inner .prod-color li {
+            width:50px;
+            float: left;
+        }
+        
+        .prod-list-inner:hover .prod-color {
+            opacity: 1;
+        }
+        /*해당 클래스 안의 ul의 아래 바깥여백을 10으로*/
+        .nike-prod ul {
+            margin-bottom: 10px;
+        }
